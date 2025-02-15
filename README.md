@@ -1,6 +1,6 @@
-### python-work
+# python-work
 大学期间做的部分python项目
-###基于多模态机器学习的移动用户行为分析与预测系统
+## 基于多模态机器学习的移动用户行为分析与预测系统
 系统主要解决以下问题：
 问题 1：结合多种模型方法，选择合理的聚类数量，根据用户常用所属的20类APP的数据进行
 聚类，并对结果进行比较分析；
@@ -14,12 +14,12 @@ APP，并给出预测结果的准确率；
 整个系统设计流程图
 <img width="481" alt="12" src="https://github.com/user-attachments/assets/78938a4b-8c4f-4925-b330-549d6d5e345a" />
 前期数据分析与处理
-#数据分析
+### 数据分析
 ①Pearson、Spearman 相关性矩阵
 <img width="573" alt="11" src="https://github.com/user-attachments/assets/30faa57b-96c5-4da5-bf83-74afb85074d3" />
 ②特征变量散点分布图
 <img width="587" alt="10" src="https://github.com/user-attachments/assets/527d3ddd-8652-40d2-bce5-848258f0d57c" />
-###数据处理
+### 数据处理
 ①时间转换
 对start_time与end_time 特征转换为一天当中的秒数，为无符号整数，方便模型的计算
 ②去量纲化
@@ -62,7 +62,7 @@ uid为第一分组特征，appid为第二分组特征，统计每一个用户检
 综述：
 用户在下午2-3点使用app频次最高。
 用户使用系统自带app频次较少，使用用户安装app频次占大多数。
-#ARIMA模型对用户行为预测
+## ARIMA模型对用户行为预测
 基本步骤
 Step1:输入与用户使用A类软件相关的数据；
 Step2:对收集到的数据进行预处理，包括数据清洗、缺失值处理、异常值处理等，确保
@@ -76,7 +76,7 @@ Step7:使用训练好的ARIMA模型进行未来用户是否会继续使用A类�
 Step8:输出结果
 拟合结果
 <img width="457" alt="6" src="https://github.com/user-attachments/assets/be508999-59f7-432b-9e9d-675e0c94535e" />
-#随机森林对用户使用时长的预测
+## 随机森林对用户使用时长的预测
 随机森林的基本步骤
 Step1:输入与用户使用A类软件相关的数据；
 Step2:对收集到的数据进行预处理，包括数据清洗、缺失值处理、异常值处理等，确保
